@@ -29,7 +29,9 @@ if dein#load_state('$HOME/.vim/dein')
   call dein#add('preservim/nerdcommenter')
   call dein#add('preservim/nerdtree')
   call dein#add('tpope/vim-fugitive')
-
+  call dein#add('vim-airline/vim-airline')
+  call dein#add('vim-airline/vim-airline-themes')
+  call dein#add('ctrlpvim/ctrlp.vim')
   call dein#end()
   call dein#save_state()
 endif
