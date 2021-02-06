@@ -3,18 +3,21 @@ SHELL := bash
 DEIN_INSTALLER ?= https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh
 
 
-all: bashrc tmuxconf vimrc gitconfig
+# all: bashrc tmuxconf vimrc gitconfig
 
+all: bashrc vimrc
+
+# bashrc:
+# 	ln -sf $(PWD)/.aliases $(HOME)/.aliases
+# 	ln -sf $(PWD)/.bashrc $(HOME)/.bashrc
+# 	ln -sf $(PWD)/.bash_profile $(HOME)/.bash_profile
+# 	ln -sf $(PWD)/.bash_prompt $(HOME)/.bash_prompt
 
 bashrc:
-	ln -sf $(PWD)/.aliases $(HOME)/.aliases
-	ln -sf $(PWD)/.bashrc $(HOME)/.bashrc
 	ln -sf $(PWD)/.bash_profile $(HOME)/.bash_profile
-	ln -sf $(PWD)/.bash_prompt $(HOME)/.bash_prompt
 
-
-tmuxconf:
-	ln -sf $(PWD)/.tmux.conf $(HOME)/.tmux.conf
+# tmuxconf:
+# 	ln -sf $(PWD)/.tmux.conf $(HOME)/.tmux.conf
 
 
 vimrc:
@@ -25,6 +28,6 @@ ifeq ("$(wildcard $(HOME)/.vim/dein)", "")
 endif
 
 
-gitconfig:
-	ln -sf $(PWD)/.gitignore_global $(HOME)/.gitignore_global
-	ln -sf $(PWD)/.gitconfig $(HOME)/.gitconfig
+# gitconfig:
+# 	ln -sf $(PWD)/.gitignore_global $(HOME)/.gitignore_global
+# 	ln -sf $(PWD)/.gitconfig $(HOME)/.gitconfig
