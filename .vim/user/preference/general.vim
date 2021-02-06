@@ -20,9 +20,11 @@ set foldlevel=46
 "##############
 "#   themes   #
 "##############
-let g:dracula_italic = 0
-let g:dracula_colorterm = 0
-colorscheme dracula
+"let g:dracula_italic = 0
+"let g:dracula_colorterm = 0
+"colorscheme dracula
+syntax enable
+colorscheme monokai
 set t_Co=256
 set hlsearch
 set nu
