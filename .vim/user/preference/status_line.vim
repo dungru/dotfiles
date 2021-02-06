@@ -20,14 +20,3 @@ set statusline+=\ %y
 set statusline+=\ %{&fileencoding?&fileencoding:&encoding}
 set statusline+=\[%{&fileformat}\]
 
-
-""Right Align
-"set statusline+=%=                " right align
-"set statusline+=%#CursorLine#   " colour
-"set statusline+=%F       " Path to the file
-
-set statusline+=\ %Y\                   " file type
-set statusline+=\ %p%%
-set statusline+=\ %l/%L:%c
-set statusline+=\ 
-
