@@ -28,3 +28,5 @@ set nu
 set laststatus=2
 
 let g:fakeclip_terminal_multiplexer_type = 'tmux'
+
+set tags=./.tags;,.tags;
