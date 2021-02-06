@@ -15,7 +15,7 @@ if dein#load_state('$HOME/.vim/dein')
   call dein#add(
     \ 'autozimu/LanguageClient-neovim',
     \ {'rev': 'next', 'build': 'bash install.sh'},
-    \ {'on_ft': ['c', 'cpp', 'go', 'python', 'java']})
+    \ {'on_ft': ['c', 'cpp', 'go', 'python', 'java', 'tcl']})
   call dein#add('djoshea/vim-autoread')
   call dein#add('sickill/vim-monokai')
   call dein#add('ekalinin/Dockerfile.vim', {'on_ft': 'dockerfile'})
