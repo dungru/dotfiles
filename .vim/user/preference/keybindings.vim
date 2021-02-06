@@ -6,7 +6,6 @@ imap <Char-5> <Char-15>:normal $<cr>
 imap <ESC>b <Char-15>:normal b<cr>
 imap <ESC>f <Char-15>:normal w<cr>
 
-nmap <silent> <F2> :NERDTree<cr>
 nmap <F3> <plug>(lcn-menu)
 vmap <silent> <F5> :sort<cr>
 nmap <silent> <F12> :MarkdownPreview<cr>
@@ -18,7 +17,7 @@ nmap <silent> gd <plug>(lcn-definition)
 nmap <silent> K <plug>(lcn-hover)
 nmap <silent> <leader>l :Limelight!!<cr>
 
-vmap <silent> y y:Oscyank<cr>
+vmap <C-c> y:Oscyank<cr>
 
 if !exists('g:VM_maps')
   let g:VM_maps = {}
