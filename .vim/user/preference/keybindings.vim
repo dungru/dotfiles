@@ -18,9 +18,3 @@ nmap <silent> K <plug>(lcn-hover)
 nmap <silent> <leader>l :Limelight!!<cr>
 
 vmap <C-c> y:Oscyank<cr>
-
-if !exists('g:VM_maps')
-  let g:VM_maps = {}
-endif
-let g:VM_maps["Select Cursor Up"] = '<S-Up>'
-let g:VM_maps["Select Cursor Down"] = '<S-Down>'
