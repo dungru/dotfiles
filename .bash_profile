@@ -12,7 +12,10 @@ export PS1='\[\033[0;35m\]\u@\h\[\033[0;33m\]:\w \[\e[91m\]$(parse_git_branch)\[
 
 alias grep='grep --color=auto'
 alias python=/usr/local/bin/python3.8
-alias ls='ls -GFh'
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
 PATH="/Library/Frameworks/Python.framework/Versions/3.8/bin:${PATH}"
 export PATH
 export LC_ALL=en_US.UTF-8
