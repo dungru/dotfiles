@@ -22,11 +22,10 @@ if [ $(uname) == "Darwin" ]; then
 fi
 
 ##############  Alias ##############
-
+export CLICOLOR=1
+export LSCOLORS=ExFxBxDxCxegedabagacad
 if [ "$(uname)" == "Darwin" ]; then
     # set for Mac
-    export CLICOLOR=1
-    export LSCOLORS=ExFxBxDxCxegedabagacad
     alias ls='ls -GFH'
 else
     alias ls='ls --color=auto'
