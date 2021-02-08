@@ -1,3 +1,5 @@
-nmap <silent> <F2> :NERDTree<cr>
-let g:NERDTreeQuitOnOpen = 0
+
+let g:NERDTreeQuitOnOpen = 1
 let g:NERDTreeIgnore = ['\.pyc$', '\~$']
+nnoremap <F2> :NERDTreeToggle<CR>
+nmap <F9> :NERDTreeFind<CR><CR>

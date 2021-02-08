@@ -15,7 +15,7 @@ autocmd BufWritePre * :%s/\s\+$//e
 " all folds open when opening a file
 set foldmethod=syntax
 set foldlevel=46
-
+set list lcs=trail:·,tab:⤏\
 
 "##############
 "#   themes   #
@@ -29,5 +29,9 @@ set laststatus=2
 
 let g:fakeclip_terminal_multiplexer_type = 'tmux'
 
-set tags=./.tags;,.tags;
-set list lcs=trail:·,tab:⤏\
+
+
+
+
+
+

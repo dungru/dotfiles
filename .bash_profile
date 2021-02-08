@@ -21,6 +21,7 @@ if [ $(uname) == "Darwin" ]; then
     export PATH="/Library/Frameworks/Python.framework/Versions/3.8/bin:${PATH}"
 fi
 
+export CSCOPE_EDITOR=vim
 ##############  Alias ##############
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
