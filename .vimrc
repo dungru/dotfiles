@@ -12,9 +12,9 @@ if dein#load_state('$HOME/.vim/dein')
   call dein#add('$HOME/.vim/dein/repos/github.com/Shougo/dein.vim')
 
   " Add plugins
-  call dein#add(
-    \ 'autozimu/LanguageClient-neovim',
-    \ {'rev': 'next', 'build': 'bash install.sh'},
+  call dein#add('autozimu/LanguageClient-neovim', {
+    \ 'rev': 'next',
+    \ 'build': 'bash install.sh'},
     \ {'on_ft': ['c', 'cpp', 'go', 'python', 'java', 'tcl']})
   call dein#add('djoshea/vim-autoread')
   call dein#add('ekalinin/Dockerfile.vim', {'on_ft': 'dockerfile'})
@@ -31,6 +31,7 @@ if dein#load_state('$HOME/.vim/dein')
   call dein#add('vim-airline/vim-airline')
   call dein#add('vim-airline/vim-airline-themes')
   call dein#add('ctrlpvim/ctrlp.vim')
+  call dein#add('preservim/tagbar')
   call dein#end()
   call dein#save_state()
 endif
