@@ -31,7 +31,7 @@ if [ "$(uname)" == "Darwin" ]; then
 else
     alias ls='ls --color=auto'
 fi
-
+alias ll='ls -al'
 alias python=/usr/local/bin/python3.8
 alias grep='grep --color=auto'
 

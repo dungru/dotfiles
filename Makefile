@@ -5,7 +5,7 @@ DEIN_INSTALLER ?= https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/i
 
 # all: bashrc tmuxconf vimrc gitconfig
 
-all: bashrc vimrc
+all: bashrc vimrc gitconfig
 
 bashrc:
 	ln -sf $(PWD)/.bash_profile $(HOME)/.bash_profile
@@ -20,6 +20,7 @@ endif
 # tmuxconf:
 # 	ln -sf $(PWD)/.tmux.conf $(HOME)/.tmux.conf
 
-# gitconfig:
-# 	ln -sf $(PWD)/.gitignore_global $(HOME)/.gitignore_global
+gitconfig:
+	ln -sf $(PWD)/.gitignore_global $(HOME)/.gitignore_global
+	$(shell git config --global core.excludesFile '~/.gitignore_global')
 # 	ln -sf $(PWD)/.gitconfig $(HOME)/.gitconfig
