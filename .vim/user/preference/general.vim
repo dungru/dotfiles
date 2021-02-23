@@ -16,7 +16,8 @@ autocmd BufWritePre * :%s/\s\+$//e
 set foldmethod=syntax
 set foldlevel=46
 set list lcs=trail:·,tab:⤏\
-
+let &t_TI = ""
+let &t_TE = ""
 "##############
 "#   themes   #
 "##############
