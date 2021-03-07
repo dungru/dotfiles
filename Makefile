@@ -5,7 +5,10 @@ DEIN_INSTALLER ?= https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/i
 
 # all: bashrc tmuxconf vimrc gitconfig
 
-all: bashrc vimrc gitconfig
+all: bashrc vimrc gitconfig ssh_config
+
+ssh_config:
+	ln -sf $(PWD)/.ssh/config $(HOME)/.ssh/config
 
 bashrc:
 	ln -sf $(PWD)/.bash_profile $(HOME)/.bash_profile
