@@ -299,13 +299,14 @@ while true; do
   display_warnings
 
   # Ask the question (not using "read -p" as it uses stderr not stdout)
-  echo -en "${CYAN}Proceed with commit? [e/n/?] ${NC}"
+  echo -en "${CYAN}Proceed with commit? [(c)ontinue/(e)dit again/(n)ot commit/?] ${NC}"
 
   # Read the answer
   read REPLY < "$TTY"
 
   # Check if the reply is valid
   case "$REPLY" in
+    C*|c*) break ;;
     E*|e*) $HOOK_EDITOR "$COMMIT_MSG_FILE" < $TTY; continue ;;
     N*|n*) exit 1 ;;
     *)     SKIP_DISPLAY_WARNINGS=1; prompt_help; continue ;;

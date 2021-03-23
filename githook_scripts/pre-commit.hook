@@ -58,13 +58,13 @@ for FILE in $FILES; do
     fi
     if [ $RETURN -eq 1 ]; then
         echo "" >&2
-        echo "Make sure you indent as the following:" >&2
+        echo "[WARNING] Make sure you indent as the following:" >&2
         echo "    clang-format -i $FILE" >&2
         echo
     fi
 done
 
-echo "Following files need to be cleaned up:"
+echo "[WARNING] Following files need to be cleaned up:"
 echo "${FILES[*]}"
 
 # Prevent unsafe functions
@@ -94,4 +94,5 @@ if [ $? -ne 0 ]; then
     echo
 fi
 
-exit $RETURN
+
+exit 0

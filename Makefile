@@ -21,7 +21,7 @@ ifeq ("$(wildcard $(HOME)/.vim/dein)", "")
 endif
 
 # tmuxconf:
-# 	ln -sf $(PWD)/.tmux.conf $(HOME)/.tmux.conf
+	ln -sf $(PWD)/.tmux.conf $(HOME)/.tmux.conf
 
 gitconfig:
 	ln -sf $(PWD)/.gitignore_global $(HOME)/.gitignore_global

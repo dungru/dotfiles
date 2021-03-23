@@ -1,7 +1,7 @@
 #!/bin/sh
 
 if ! test -d .git; then
-    echo "Execute githook_scripts/install-git-hooks in the top-level directory."
+    echo "Execute ./githook_scripts/install-git-hooks in the top-level directory."
     exit 1
 fi
 
