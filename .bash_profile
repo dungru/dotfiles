@@ -45,3 +45,4 @@ alias less="less -R"
 alias mount-gdrive="rclone mount gd: ${HOME}/gdrive --allow-non-empty --vfs-cache-mode writes --daemon"
 alias umount-gdrive="fusermount -qzu ${HOME}/gdrive"
 
+source "$HOME/.cargo/env"
