@@ -26,7 +26,7 @@ export CSCOPE_EDITOR=vim
 ##############  Alias ##############
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
-LS_COLORS=$LS_COLORS:'di=1;37:' ; export LS_COLORS
+LS_COLORS=$LS_COLORS:'di=1;1;40;37:' ; export LS_COLORS
 if [ "$(uname)" == "Darwin" ]; then
     # set for Mac
     alias ls='ls -GFH'
