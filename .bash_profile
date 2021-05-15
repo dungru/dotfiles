@@ -8,7 +8,7 @@ parse_git_branch() {
 
 ############## Environment Variabble ##############
 
-export PS1='\[\033[0;35m\]\u@\h\[\033[0;33m\]:\w \[\e[91m\]$(parse_git_branch)\[\033[00m\]$ '
+export PS1='\[\033[1;35m\]\u@\h\[\033[1;33m\]:\w \[\e[91m\]$(parse_git_branch)\[\033[00m\]$ '
 export PATH=$HOME/.local/bin:$PATH
 export LANGUAGE="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
@@ -26,6 +26,7 @@ export CSCOPE_EDITOR=vim
 ##############  Alias ##############
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
+LS_COLORS=$LS_COLORS:'di=1;37:' ; export LS_COLORS
 if [ "$(uname)" == "Darwin" ]; then
     # set for Mac
     alias ls='ls -GFH'

@@ -5,7 +5,7 @@ DEIN_INSTALLER ?= https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/i
 
 # all: bashrc tmuxconf vimrc gitconfig
 
-all: bashrc vimrc gitconfig ssh_config
+all: bashrc vimrc gitconfig ssh_config tigconf
 
 ssh_config:
 	ln -sf $(PWD)/.ssh/config $(HOME)/.ssh/config
@@ -20,8 +20,11 @@ ifeq ("$(wildcard $(HOME)/.vim/dein)", "")
 	curl -sL $(DEIN_INSTALLER) | bash -s $(HOME)/.vim/dein
 endif
 
-# tmuxconf:
+tmuxconf:
 	ln -sf $(PWD)/.tmux.conf $(HOME)/.tmux.conf
+
+tigconf:
+	ln -sf $(PWD)/.tigrc $(HOME)/.tigrc
 
 gitconfig:
 	ln -sf $(PWD)/.gitignore_global $(HOME)/.gitignore_global
