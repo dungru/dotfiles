@@ -25,13 +25,13 @@ fi
 export CSCOPE_EDITOR=vim
 ##############  Alias ##############
 export CLICOLOR=1
-export LSCOLORS=ExFxBxDxCxegedabagacad
-LS_COLORS=$LS_COLORS:'di=1;1;40;37:' ; export LS_COLORS
+export LSCOLORS=HxFxBxDxCxegedabagacad
 if [ "$(uname)" == "Darwin" ]; then
     # set for Mac
     alias ls='ls -GFH'
 else
     alias ls='ls --color=auto'
+    LS_COLORS=$LS_COLORS:'di=1;1;40;37:' ; export LS_COLORS
 fi
 alias ll='ls -al'
 alias python=/usr/local/bin/python3.8
