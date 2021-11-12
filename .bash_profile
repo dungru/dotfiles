@@ -45,5 +45,4 @@ alias less="less -R"
 
 alias mount-gdrive="rclone mount gd: ${HOME}/gdrive --allow-non-empty --vfs-cache-mode writes --daemon"
 alias umount-gdrive="fusermount -qzu ${HOME}/gdrive"
-
-source "$HOME/.cargo/env"
+if [ -f ~/devenv/scripts/init ]; then source ~/devenv/scripts/init; fi
