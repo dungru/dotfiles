@@ -45,4 +45,15 @@ alias less="less -R"
 
 alias mount-gdrive="rclone mount gd: ${HOME}/gdrive --allow-non-empty --vfs-cache-mode writes --daemon"
 alias umount-gdrive="fusermount -qzu ${HOME}/gdrive"
+
 if [ -f ~/devenv/scripts/init ]; then source ~/devenv/scripts/init; fi
+
+# MacPorts
+if [ $(uname) == "Darwin" ]; then
+    # MacPorts Installer addition on 2021-11-02_at_13:05:29: adding an appropriate PATH variable for use with MacPorts.
+    export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+    # Finished adapting your PATH environment variable for use with MacPorts.
+    # MacPorts Installer addition on 2021-11-02_at_13:05:29: adding an appropriate MANPATH variable for use with MacPorts.
+    export MANPATH="/opt/local/share/man:$MANPATH"
+    # Finished adapting your MANPATH environment variable for use with MacPorts.
+fi
