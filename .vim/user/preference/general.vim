@@ -15,7 +15,14 @@ autocmd BufWritePre * :%s/\s\+$//e
 " all folds open when opening a file
 set foldmethod=syntax
 set foldlevel=46
-set list lcs=trail:·,tab:⤏\
+filetype plugin indent on
+syn on se title
+set tabstop=8
+set softtabstop=8
+set shiftwidth=8
+set noexpandtab
+set list listchars=tab:»\ ,trail:.,extends:»,precedes:«
+set ai
 let &t_TI = ""
 let &t_TE = ""
 "##############
