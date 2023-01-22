@@ -1,11 +1,11 @@
 SHELL := bash
 
-DEIN_INSTALLER ?= https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh
+DEIN_INSTALLER ?= https://raw.githubusercontent.com/santosned/dein.vim/master/bin/installer.sh
 
 
 # all: bashrc tmuxconf vimrc gitconfig
 
-all: bashrc vimrc gitconfig ssh_config tigconf tmuxconf
+all: vimrc bashrc gitconfig ssh_config tigconf tmuxconf
 
 ssh_config:
 	ln -sf $(PWD)/.ssh/config $(HOME)/.ssh/config

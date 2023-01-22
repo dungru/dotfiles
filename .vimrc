@@ -14,8 +14,8 @@ if dein#load_state('$HOME/.vim/dein')
   " Add plugins
   call dein#add('autozimu/LanguageClient-neovim', {
      \ 'rev': 'next',
-     \ 'build': 'bash install.sh'},
-     \ {'on_ft': ['c', 'cpp', 'go', 'python', 'java']})
+     \ 'build': 'bash install.sh',
+     \ 'on_ft': ['c', 'cpp', 'go', 'python', 'java']})
   call dein#add('djoshea/vim-autoread')
   call dein#add('ekalinin/Dockerfile.vim', {'on_ft': 'dockerfile'})
   call dein#add('ervandew/supertab')
