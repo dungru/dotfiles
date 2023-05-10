@@ -17,7 +17,7 @@ export LANG="en_US.UTF-8"
 export TERM='xterm-256color'
 
 if [ $(uname) == "Darwin" ]; then
-    source "`brew --prefix`/etc/grc.bashrc"
+    #source "`brew --prefix`/etc/grc.bashrc"
     export PATH="/Library/Frameworks/Python.framework/Versions/3.8/bin:${PATH}"
     eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
@@ -57,3 +57,4 @@ if [ $(uname) == "Darwin" ]; then
     export MANPATH="/opt/local/share/man:$MANPATH"
     # Finished adapting your MANPATH environment variable for use with MacPorts.
 fi
+
