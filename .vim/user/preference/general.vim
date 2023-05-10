@@ -28,15 +28,24 @@ let &t_TE = ""
 "##############
 "#   themes   #
 "##############
-syntax enable
-colorscheme monokai
 set t_Co=256
 set hlsearch
 set nu
 set laststatus=2
-
 let g:fakeclip_terminal_multiplexer_type = 'tmux'
 
+
+"#####################
+"#       BASIC       #
+"#####################
+" BASIC SETUP:
+
+" enter the current millenium
+set nocompatible
+
+" enable syntax and plugins (for netrw)
+syntax enable
+filetype plugin on
 
 "#####################
 "# Fuzzy File Search #
@@ -61,15 +70,18 @@ set wildmenu
 "###################
 "#  TAG JUMPING:   #
 "###################
+" TAG JUMPING:
+
 " Create the `tags` file (may need to install ctags first)
 command! MakeTags !ctags -R .
+
 " NOW WE CAN:
 " - Use ^] to jump to tag under cursor
 " - Use g^] for ambiguous tags
 " - Use ^t to jump back up the tag stack
+
 " THINGS TO CONSIDER:
 " - This doesn't help if you want a visual list of tags
-
 "###################
 "#  AUTOCOMPLETE:  #
 "###################
@@ -99,3 +111,19 @@ let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 " - :edit a folder to open a file browser
 " - <CR>/v/t to open in an h-split/v-split/tab
 " - check |netrw-browse-maps| for more mappings
+
+
+"###################
+"#    SNIPPETS     #
+"###################
+" SNIPPETS:
+
+" Read an empty HTML template and move cursor to title
+nnoremap ,html :-1read $HOME/.vim/.skeleton.html<CR>3jwf>a
+
+" NOW WE CAN:
+" - Take over the world!
+"   (with much fewer keystrokes)
+
+
+
